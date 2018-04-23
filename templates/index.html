@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Chatroom</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.dev.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var socket = io.connect('http://localhost:9000');
+
+            socket.on('connect', function () {
+                socket.send("USER HAS CONNECTED");
+            });
+
+            socket.on('message', function (message) {
+                $("#messages").append('<li>' + message + '</li>');
+                console.log("recieved message!");
+                console.log(message)
+            });
+
+            $("#sendbutton").on("click", function () {
+                socket.send($('#myMessage').val());
+            });
+        });
+    </script>
+
+    <input type="text" id="myMessage">
+    <button id="sendbutton">SEND</button>
+    <ul id="messages">
+        {% for msg in messages %}
+            <li>{{ msg }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+
+</html>
