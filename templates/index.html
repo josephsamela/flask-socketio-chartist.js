@@ -1,42 +1,46 @@
 <html>
 
 <head>
-    <title>Chatroom</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.dev.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fc4513">
+
+    <title>{{ title }}</title>
+
+    <script src="{{ url_for('static', filename='js/chartist.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chartist-plugin-legend.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/socket.io.dev.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chartist.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chartist-legend.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
+    <h1>{{ title }}</h1>
 
-            var socket = io.connect('http://localhost:9000');
-
-            socket.on('connect', function () {
-                socket.send("USER HAS CONNECTED");
-            });
-
-            socket.on('message', function (message) {
-                $("#messages").append('<li>' + message + '</li>');
-                console.log("recieved message!");
-                console.log(message)
-            });
-
-            $("#sendbutton").on("click", function () {
-                socket.send($('#myMessage').val());
-            });
-        });
-    </script>
-
-    <input type="text" id="myMessage">
-    <button id="sendbutton">SEND</button>
-    <ul id="messages">
-        {% for msg in messages %}
-            <li>{{ msg }}</li>
-        {% endfor %}
-    </ul>
+    <div style="width:100%">
+        <div class="column is-3">
+            <strong>CPU Temperature</strong>
+            <br>
+            <small>Temp(C) vs. Time(EST)</small>
+        </div>
+        <div id="data-chart-legend" class="column">
+            <p id="data-chart-legend"></p>
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="data-chart">
+        </div>
+    </div>
 
 </body>
+
+<script src="{{ url_for('static', filename='js/update.js') }}" }></script>
 
 </html>

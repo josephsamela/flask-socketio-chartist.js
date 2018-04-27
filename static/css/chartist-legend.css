@@ -1,0 +1,135 @@
+.ct-chart {
+    position: relative;
+}
+.ct-legend {
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+}
+.ct-legend li {
+    position: relative;
+    padding-left: 23px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+.ct-legend li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+}
+.ct-legend li.inactive:before {
+    background: transparent;
+}
+.ct-legend.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ct-legend.ct-legend-inside li{
+    display: block;
+    margin: 0;
+}
+.ct-legend .ct-series-0:before {
+    background-color: #FF5714;
+    border-color: #FF5714;
+}
+.ct-legend .ct-series-1:before {
+    background-color: #FFB800;
+    border-color: #FFB800;
+}
+.ct-legend .ct-series-2:before {
+    background-color: #1BE7FF;
+    border-color: #1BE7FF;
+}
+.ct-legend .ct-series-3:before {
+    background-color: #6EEB83;
+    border-color: #6EEB83;
+}
+.ct-legend .ct-series-4:before {
+    background-color: #E4FF1A;
+    border-color: #E4FF1A;
+}
+
+.codeblock-hidden{
+    display: none;
+}
+
+.ct-hidden {
+    opacity: 0;
+}
+
+.ct-dimmed {
+    opacity: 0.5;
+}
+
+.javascript.hljs span::selection, .javascript.hljs::selection {
+    background: #2a2526!important
+}
+
+.javascript.hljs .hljs-comment {
+        color: #7b6d70
+}
+
+.javascript.hljs .hljs-atom,.javascript.hljs .hljs-number {
+        color: #F4C63D
+}
+
+.cm-s-3024-day .hljs-attribute,.javascript.hljs .hljs-property {
+        color: #f7f2ea
+}
+
+.javascript.hljs .hljs-keyword {
+        color: #F05B4F;
+        font-weight: 700
+}
+
+.javascript.hljs .hljs-string {
+        color: #F4C63D
+}
+
+.javascript.hljs .hljs-variable {
+        color: #f7f2ea
+}
+
+.javascript.hljs .hljs-def,.javascript.hljs .hljs-variable-2 {
+        color: #f8b3ad
+}
+
+.javascript.hljs .hljs-bracket {
+        color: #3a3432
+}
+
+.javascript.hljs .hljs-tag {
+        color: #F05B4F;
+        font-weight: 700
+}
+
+.javascript.hljs .hljs-link {
+        color: #F4C63D
+}
+
+.javascript.hljs .hljs-error{
+        background-color: #F05B4F;
+        color: #453D3F
+}
+
+.javascript.hljs .hljs-literal{
+        color: #F05B4F;
+}
+
+.javascript.hljs .CodeMirror-activeline-background {
+        background: #e8f2ff!important
+}
+
+.javascript.hljs .CodeMirror-matchingbracket {
+        text-decoration: underline;
+        color: #fff!important
+}
