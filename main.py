@@ -22,7 +22,7 @@ def index():
 def produce_chart_data():
     while True:
         # Sleep for random duration to prove async working
-        time.sleep( random.random() )
+        time.sleep(0.1)
 
         # Get some data from source and emit to clients when recieved
         data = get_some_data()
@@ -79,4 +79,6 @@ if __name__ == '__main__':
     t.start()
 
     PORT = json.load(open('config.json'))["PORT"]
+    print("Running on localhost:"+str(PORT))
+
     socketio.run(app, host='0.0.0.0', port=PORT)
