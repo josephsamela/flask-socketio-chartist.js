@@ -4,7 +4,7 @@ Bare-bones flask app using socket.io to stream data to client drawing charts wit
 
 This example is ready to rock and roll! Install required python packages and run `main.py`. From there start hacking and make something amazing!
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.gif)
 
 ## Python dependencies
 * flask 

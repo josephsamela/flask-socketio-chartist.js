@@ -36,38 +36,58 @@ def get_some_data():
                 {
                     "name": 'Data 1',
                     "data": [
+                            {"x": 143034652600, "y": random.random()*10+70},
                             {"x": 143134652600, "y": random.random()*10+70},
                             {"x": 143234652600, "y": random.random()*10+70},
                             {"x": 143334652600, "y": random.random()*10+70},
                             {"x": 143434652600, "y": random.random()*10+70},
-                            {"x": 143534652600, "y": random.random()*10+70}
+                            {"x": 143534652600, "y": random.random()*10+70},
+                            {"x": 143634652600, "y": random.random()*10+70},
+                            {"x": 143734652600, "y": random.random()*10+70},
+                            {"x": 143834652600, "y": random.random()*10+70},
+                            {"x": 143934652600, "y": random.random()*10+70}
                     ]
                 }, {
                     "name": 'Data 2',
                     "data": [
+                            {"x": 143034652600, "y": random.random()*10+40},
                             {"x": 143134652600, "y": random.random()*10+40},
                             {"x": 143234652600, "y": random.random()*10+40},
                             {"x": 143334652600, "y": random.random()*10+40},
                             {"x": 143434652600, "y": random.random()*10+40},
-                            {"x": 143534652600, "y": random.random()*10+40}
+                            {"x": 143534652600, "y": random.random()*10+40},
+                            {"x": 143634652600, "y": random.random()*10+40},
+                            {"x": 143734652600, "y": random.random()*10+40},
+                            {"x": 143834652600, "y": random.random()*10+40},
+                            {"x": 143934652600, "y": random.random()*10+40}
                     ]
                 }, {
                     "name": 'Data 3',
                     "data": [
+                            {"x": 143034652600, "y": random.random()*10+25},
                             {"x": 143134652600, "y": random.random()*10+25},
                             {"x": 143234652600, "y": random.random()*10+25},
                             {"x": 143334652600, "y": random.random()*10+25},
                             {"x": 143434652600, "y": random.random()*10+25},
-                            {"x": 143534652600, "y": random.random()*10+25}
+                            {"x": 143534652600, "y": random.random()*10+25},
+                            {"x": 143634652600, "y": random.random()*10+25},
+                            {"x": 143734652600, "y": random.random()*10+25},
+                            {"x": 143834652600, "y": random.random()*10+25},
+                            {"x": 143934652600, "y": random.random()*10+25}
                     ]
                 }, {
                     "name": 'Data 3',
                     "data": [
+                            {"x": 143034652600, "y": random.random()*10+25},
                             {"x": 143134652600, "y": random.random()*10+25},
                             {"x": 143234652600, "y": random.random()*10+25},
                             {"x": 143334652600, "y": random.random()*10+25},
                             {"x": 143434652600, "y": random.random()*10+25},
-                            {"x": 143534652600, "y": random.random()*10+25}
+                            {"x": 143534652600, "y": random.random()*10+25},
+                            {"x": 143634652600, "y": random.random()*10+25},
+                            {"x": 143734652600, "y": random.random()*10+25},
+                            {"x": 143834652600, "y": random.random()*10+25},
+                            {"x": 143934652600, "y": random.random()*10+25}
                     ]
                 }
             ]}
