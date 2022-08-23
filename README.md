@@ -7,6 +7,9 @@ When you need real-time signal data on a webpage. Flask + socketio + chartist.js
 ![screenshot](screenshot.gif)
 
 ## Python dependencies
-* flask 
-* flask_socketio
-* eventlet (required for server-side emit)
+
+Install dependencies listed in the `requirement.txt` file. Make sure to install the correct version!
+
+```
+$ pip install -r requirements.txt
+```
